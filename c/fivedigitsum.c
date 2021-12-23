@@ -14,7 +14,7 @@ int main(void) {
 
     int j = 0;
     for (int i = 1; i <= 5; i++) {
-        j += ((n - j) % (int)pow(10, i)) / (int)pow(10, i-1);
+        j += (n % (int)pow(10, i)) / (int)pow(10, i-1);
     }
     printf("%d", j);
 
